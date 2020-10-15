@@ -1,38 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+html {
+  font-family: "Lato", sans-serif;
+}
+
 .App {
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* header */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 100%;
+  background: white;
+  height: 120px;
   display: flex;
-  flex-direction: column;
+  position: fixed;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 999;
 }
 
-.App-link {
-  color: #61dafb;
+#heading {
+  font-weight: 300;
+  letter-spacing: 1em;
+  font-size: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  border: none;
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100vh;
+  background: white;
+  z-index: 999;
+}
+
+.modal-main {
+  /* display: flex;
+  flex-direction: column; */
+  letter-spacing: 0.3em;
+  font-size: 25px;
+}
+
+.display-block {
+  display: flex;
+  align-items: center;
+}
+
+.display-none {
+  display: none;
+}
+
+#close-button {
+  display: flex;
+  justify-items: flex-end;
+  font-size: 40px;
+  font-weight: 700;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:-webkit-any-link {
+  color: black;
+}
+
+li {
+  padding: 20px;
+}
+
+/* main */
+
+.main {
+  height: 800px;
+  padding-top: 120px;
+  background-image: url("./fadedImage.jpeg");
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+}
+
+.information {
+  padding: 30px;
+}
+
+.map {
+  filter: grayscale(100%);
+  border-top: 5px solid black;
+}
+
+.icon {
+  font-size: 3em;
+  padding: 5px;
 }
