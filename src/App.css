@@ -35,6 +35,11 @@ button {
   cursor: pointer;
 }
 
+#business-logo {
+  height: 300px;
+  padding-top: 200px;
+}
+
 /* modal */
 
 .modal {
@@ -48,8 +53,6 @@ button {
 }
 
 .modal-main {
-  /* display: flex;
-  flex-direction: column; */
   letter-spacing: 0.3em;
   font-size: 25px;
 }
@@ -65,10 +68,11 @@ button {
 
 #close-button {
   display: flex;
-  justify-items: flex-end;
+  justify-content: flex-end;
   font-size: 40px;
   font-weight: 700;
   width: 100%;
+  padding: 10px;
 }
 
 ul {
@@ -94,11 +98,30 @@ li {
 /* main */
 
 .main {
-  height: 800px;
   padding-top: 120px;
-  background-image: url("./fadedImage.jpeg");
 }
 
+.section-1 {
+  background-image: url("./fadedImage.jpeg");
+  height: 800px;
+}
+
+.section-2 {
+  padding: 30px;
+  display: flex;
+  height: 600px;
+}
+
+.section-2-image {
+  width: 50%;
+  object-fit: scale-down;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.section-2-text {
+  padding-top: 20px;
+}
 /* footer */
 
 .footer {

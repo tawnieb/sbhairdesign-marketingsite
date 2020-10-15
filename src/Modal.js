@@ -11,7 +11,7 @@ function Modal({ handleClose, show }) {
         </button>
         <nav>
           <ul>
-            <a href="#footer">
+            <a href="#">
               <li>HOME</li>
             </a>
             <a href="#">
