@@ -4,6 +4,7 @@ import {
   faFacebook,
   faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import key from "./key.js";
 
 function Footer() {
   return (
@@ -35,7 +36,7 @@ function Footer() {
             scrolling="no"
             marginHeight="0"
             marginWidth="0"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBB5OIE9jfuIw7YXQJRd0Bxw7a9DgUMRjA&q=place_id:ChIJn6g_HiWXd0gR775iZ2wH_iE"
+            src={`https://www.google.com/maps/embed/v1/place?key=${key}=place_id:ChIJn6g_HiWXd0gR775iZ2wH_iE`}
             aria-label="Via oriani 22 Cervia"
           ></iframe>
         </div>
