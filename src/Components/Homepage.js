@@ -2,15 +2,15 @@ import React from "react";
 import Logo from "../Images/SBHairLogo.png";
 import Hair from "../Images/BlondeHair.jpg";
 
-function Main() {
+function Homepage() {
   return (
-    <div className="main">
-      <div className="section-1">
+    <div className="homepage">
+      <div className="logo-section">
         <img id="business-logo" src={Logo} alt="logo" />
       </div>
-      <div className="section-2">
-        <img className="section-2-image" src={Hair} alt="blond-hair" />
-        <div className="section-2-text" id="about-me">
+      <div className="about-me">
+        <img src={Hair} alt="blonde-hair" />
+        <div>
           <h2>ABOUT ME</h2>
           <p>
             SB HAIRDESIGN IS A HAIR DRESSING SALON STARTED BY SARAH BAVARO
@@ -47,4 +47,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Homepage;

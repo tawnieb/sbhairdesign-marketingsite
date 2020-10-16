@@ -2,30 +2,7 @@
 
 html {
   font-family: "Lato", sans-serif;
-}
-
-.App {
   text-align: center;
-  font-family: "Lato", sans-serif;
-}
-
-/* header */
-
-.header {
-  width: 100%;
-  background: white;
-  height: 120px;
-  display: flex;
-  position: fixed;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 999;
-}
-
-#heading {
-  font-weight: 300;
-  letter-spacing: 1em;
-  font-size: 25px;
 }
 
 button {
@@ -35,31 +12,68 @@ button {
   cursor: pointer;
 }
 
-#business-logo {
-  height: 300px;
-  padding-top: 200px;
+ul {
+  list-style-type: none;
 }
 
-/* modal */
+li {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+h3 {
+  font-weight: 300;
+  letter-spacing: 1em;
+  font-size: 25px;
+}
+
+/* header */
+
+.header {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background: white;
+  z-index: 1;
+}
+
+#menu-icon {
+  height: 40px;
+}
+
+#header-logo {
+  height: 120px;
+}
+
+/* nav */
 
 .modal {
   position: fixed;
   top: 0;
   left: 0;
-  width: 30%;
+  width: 20%;
   height: 100vh;
   background: white;
   z-index: 999;
-}
-
-.modal-main {
   letter-spacing: 0.3em;
   font-size: 25px;
-}
-
-.display-block {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
 }
 
 .display-none {
@@ -75,61 +89,9 @@ button {
   padding: 10px;
 }
 
-ul {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  color: blue;
-}
-
-a:-webkit-any-link {
-  color: black;
-}
-
-li {
-  padding: 20px;
-}
-
-/* main */
-
-.main {
-  padding-top: 120px;
-}
-
-.section-1 {
-  background-image: url("../Images/LeafBackgroundFaded.jpeg");
-  height: 800px;
-}
-
-.section-2 {
-  padding: 30px;
-  display: flex;
-  height: 600px;
-}
-
-.section-2-image {
-  width: 50%;
-  object-fit: scale-down;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.section-2-text {
-  padding-top: 20px;
-}
 /* footer */
 
-.footer {
-  text-align: center;
-  width: 100%;
-}
-
-.information {
+.footer-information {
   padding: 30px;
 }
 
@@ -143,15 +105,51 @@ li {
   padding: 5px;
 }
 
+/* homepage*/
+
+.homepage {
+  padding-top: 120px;
+}
+
+.logo-section {
+  background-image: url("../Images/LeafBackgroundFaded.jpeg");
+  height: 800px;
+}
+
+#business-logo {
+  height: 300px;
+  padding-top: 200px;
+}
+
+.about-me {
+  padding: 30px;
+  display: flex;
+  height: 600px;
+}
+
+.about-me img {
+  width: 50%;
+  object-fit: scale-down;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about-me div {
+  padding-top: 20px;
+}
+
 /* prices */
 
-#prices-page {
+.prices-page {
   padding-top: 120px;
   height: 2000px;
   display: flex;
   flex-direction: column;
+  background-image: url("../Images/LeafBackgroundFaded.jpeg");
 }
 
-#price-list {
+.price-list {
   padding: 30px;
+  height: 600px;
+  object-fit: scale-down;
 }

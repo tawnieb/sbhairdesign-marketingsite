@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "./Modal";
+import Nav from "./Nav";
 import Logo from "../Images/SBHairLogo.png";
 import Menu from "../Images/MenuIcon.png";
 
@@ -17,11 +17,10 @@ function Header() {
   return (
     <header className="header">
       <button onClick={showModal}>
-        <img src={Menu} alt="hamburger-icon" style={{ height: "40px" }} />
+        <img id="menu-icon" src={Menu} alt="menu-icon" />
       </button>
-
-      <Modal show={show} handleClose={hideModal} />
-      <img src={Logo} alt="logo" style={{ height: "120px" }} />
+      <Nav show={show} handleClose={hideModal} />
+      <img id="header-logo" src={Logo} alt="logo" />
       <a href="https://www.fresha.com/a/sbhairdesign-thrapston-14-scotney-way-hdank2qo/booking?menu=true">
         <span>BOOK ONLINE</span>
       </a>

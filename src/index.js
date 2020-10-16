@@ -3,15 +3,17 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./Pages/App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 import Prices from "./Pages/Prices.js";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Route exact path="/prices" component={Prices} />
-      <Route exact path="/" component={App} />
-    </BrowserRouter>
+    <HashRouter basename="/">
+      <div>
+        <Route exact path="/prices" component={Prices} />
+        <Route exact path="/" component={App} />
+      </div>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

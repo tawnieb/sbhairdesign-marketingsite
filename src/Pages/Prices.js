@@ -9,25 +9,14 @@ const Prices = () => {
   return (
     <div>
       <Header></Header>
-      <div className="section-1" id="prices-page">
+      <div className="prices-page">
+        <img className="price-list" src={Pricelist} alt="price list" />
         <img
-          id="price-list"
-          src={Pricelist}
-          alt="price list"
-          style={{ height: "600px", objectFit: "scale-down" }}
-        />
-        <img
-          id="price-list"
+          className="price-list"
           src={Extensions}
           alt="extensions price list"
-          style={{ height: "600px", objectFit: "scale-down" }}
         />
-        <img
-          id="price-list"
-          src={Bridal}
-          alt="bridal price list"
-          style={{ height: "600px", objectFit: "scale-down" }}
-        />
+        <img className="price-list" src={Bridal} alt="bridal price list" />
       </div>
       <Footer></Footer>
     </div>

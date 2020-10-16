@@ -8,9 +8,9 @@ import key from "../key.js";
 
 function Footer() {
   return (
-    <footer className="footer" id="footer">
-      <div className="information">
-        <h3 id="heading">GET IN TOUCH</h3>
+    <footer id="footer">
+      <div className="footer-information">
+        <h3>GET IN TOUCH</h3>
         <p>SB Hair Design</p>
         <p>14 Scotney Way, Thrapston, Kettering, NN14 4SA</p>
         <p>E: sbhairdesign1@gmail.com</p>
@@ -25,7 +25,7 @@ function Footer() {
         </div>
       </div>
       <div className="map">
-        <h3 id="heading">FIND US</h3>
+        <h3>FIND US</h3>
         <div>
           <iframe
             id="google-map"
