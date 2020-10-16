@@ -4,7 +4,7 @@ import {
   faFacebook,
   faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import key from "./key.js";
+import key from "../key.js";
 
 function Footer() {
   return (

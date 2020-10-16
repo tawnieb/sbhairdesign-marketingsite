@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "./Logo.png";
-import Hair from "./bloneHair.jpg";
+import Logo from "../Images/SBHairLogo.png";
+import Hair from "../Images/BlondeHair.jpg";
 
 function Main() {
   return (
@@ -10,7 +10,7 @@ function Main() {
       </div>
       <div className="section-2">
         <img className="section-2-image" src={Hair} alt="blond-hair" />
-        <div classname="section-2-text">
+        <div classname="section-2-text" id="about-me">
           <h2>ABOUT ME</h2>
           <p>
             SB HAIRDESIGN IS A HAIR DRESSING SALON STARTED BY SARAH BAVARO

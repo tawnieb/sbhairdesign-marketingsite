@@ -102,7 +102,7 @@ li {
 }
 
 .section-1 {
-  background-image: url("./fadedImage.jpeg");
+  background-image: url("../Images/LeafBackgroundFaded.jpeg");
   height: 800px;
 }
 
@@ -125,6 +125,7 @@ li {
 /* footer */
 
 .footer {
+  text-align: center;
   width: 100%;
 }
 
@@ -140,4 +141,17 @@ li {
 .icon {
   font-size: 3em;
   padding: 5px;
+}
+
+/* prices */
+
+#prices-page {
+  padding-top: 120px;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+}
+
+#price-list {
+  padding: 30px;
 }

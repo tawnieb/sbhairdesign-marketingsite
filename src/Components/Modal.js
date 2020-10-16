@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Modal({ handleClose, show }) {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -11,30 +12,17 @@ function Modal({ handleClose, show }) {
         </button>
         <nav>
           <ul>
-            <a href="#">
-              <li>HOME</li>
-            </a>
-            <a href="#">
-              <li>ABOUT SB HAIR DESIGN</li>
-            </a>
-            <a href="#">
-              <li>PRICES</li>
+            <Link to={`/`}>HOME</Link>
+            <a href="#about-me">
+              <li>ABOUT ME</li>
             </a>
             <a href="https://www.fresha.com/a/sbhairdesign-thrapston-14-scotney-way-hdank2qo/booking?menu=true">
               <li>BOOK ONLINE</li>
             </a>
-            <a href="#">
-              <li>FOLLOW US</li>
-            </a>
-            <a href="#">
-              <li>REVIEWS</li>
-            </a>
-            <a href="#">
-              <li>FAQ's</li>
-            </a>
-            <a href="#">
+            <a href="#footer">
               <li>CONTACT</li>
             </a>
+            <Link to={`/prices`}>PRICES</Link>
           </ul>
         </nav>
       </section>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
-import Logo from "./Logo.png";
-import Menu from "./menu.png";
+import Logo from "../Images/SBHairLogo.png";
+import Menu from "../Images/MenuIcon.png";
 
 function Header() {
   const [show, setShow] = useState(false);
