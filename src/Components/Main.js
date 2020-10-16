@@ -10,7 +10,7 @@ function Main() {
       </div>
       <div className="section-2">
         <img className="section-2-image" src={Hair} alt="blond-hair" />
-        <div classname="section-2-text" id="about-me">
+        <div className="section-2-text" id="about-me">
           <h2>ABOUT ME</h2>
           <p>
             SB HAIRDESIGN IS A HAIR DRESSING SALON STARTED BY SARAH BAVARO

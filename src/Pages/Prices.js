@@ -9,7 +9,7 @@ const Prices = () => {
   return (
     <div>
       <Header></Header>
-      <div class="section-1" id="prices-page">
+      <div className="section-1" id="prices-page">
         <img
           id="price-list"
           src={Pricelist}
