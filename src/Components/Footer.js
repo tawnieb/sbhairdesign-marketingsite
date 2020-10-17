@@ -11,10 +11,8 @@ function Footer() {
     <footer id="footer">
       <div className="footer-information">
         <h3>GET IN TOUCH</h3>
-        <p>SB Hair Design</p>
-        <p>14 Scotney Way, Thrapston, Kettering, NN14 4SA</p>
         <p>E: sbhairdesign1@gmail.com</p>
-        <p>Tel: 0739878064</p>
+        <p>Tel: 07915942723</p>
         <div>
           <a href="https://www.facebook.com/sbhairdesignnn" target="_none">
             <FontAwesomeIcon className="icon" icon={faFacebook} />
