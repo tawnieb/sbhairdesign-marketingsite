@@ -7,7 +7,7 @@ import Extensions from "../Images/ExtensionsPriceList.png";
 
 const Prices = () => {
   return (
-    <div>
+    <div className="wrapper">
       <Header></Header>
       <div className="prices-page">
         <img className="price-list" src={Pricelist} alt="price list" />

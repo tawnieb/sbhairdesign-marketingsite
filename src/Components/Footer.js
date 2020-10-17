@@ -25,14 +25,12 @@ function Footer() {
         </div>
       </div>
       <div className="map">
-        <h3>FIND US</h3>
+        <h3>FIND ME</h3>
         <div>
           <iframe
             id="google-map"
             title="change-maps"
             frameBorder="0"
-            width="100%"
-            height="350px"
             scrolling="no"
             marginHeight="0"
             marginWidth="0"

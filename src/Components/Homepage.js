@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../Images/SBHairLogo.png";
-import Hair from "../Images/BlondeHair.jpg";
+import Sarah from "../Images/Sarah.jpg";
 
 function Homepage() {
   return (
@@ -9,11 +9,11 @@ function Homepage() {
         <img id="business-logo" src={Logo} alt="logo" />
       </div>
       <div className="about-me">
-        <img src={Hair} alt="blonde-hair" />
+        <img src={Sarah} alt="blonde-hair" />
         <div>
           <h2>ABOUT ME</h2>
           <p>
-            SB HAIRDESIGN IS A HAIR DRESSING SALON STARTED BY SARAH BAVARO
+            SB HAIR DESIGN IS A HAIR DRESSING SALON STARTED BY SARAH BAVARO
             (THAT'S ME. HELLO!).
           </p>
           <p>
@@ -26,7 +26,7 @@ function Homepage() {
             IN 2016 MY PASSION FOR HAIRDRESSING TOOK ME AROUND THE WORLD,
             WORKING ON CRUISE SHIPS, & AFTER THAT, ALL THE WAY DOWN UNDER TO
             AUSTRALIA. IN 2019, AFTER YEARS OF WORKING IN SALONS, MY DAUGHTER
-            WAS BORN AND TEH TIME WAS RIGHT TO OPEN A SALON OF MY OWN.
+            WAS BORN AND THE TIME WAS RIGHT TO OPEN A SALON OF MY OWN.
           </p>
           <p>
             AS YOUR HAIRDRESSER I AM DEVOTED TO YOUR HAIR AND LOVE TO ACHIEVE

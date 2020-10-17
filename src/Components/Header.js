@@ -21,8 +21,11 @@ function Header() {
       </button>
       <Nav show={show} handleClose={hideModal} />
       <img id="header-logo" src={Logo} alt="logo" />
-      <a href="https://www.fresha.com/a/sbhairdesign-thrapston-14-scotney-way-hdank2qo/booking?menu=true">
-        <span>BOOK ONLINE</span>
+      <a
+        id="book-online"
+        href="https://www.fresha.com/a/sbhairdesign-thrapston-14-scotney-way-hdank2qo/booking?menu=true"
+      >
+        <p>BOOK ONLINE</p>
       </a>
     </header>
   );
