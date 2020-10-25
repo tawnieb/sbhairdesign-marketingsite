@@ -23,7 +23,7 @@ button {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 1rem;
 }
 
@@ -31,6 +31,14 @@ h3 {
   font-weight: 300;
   letter-spacing: 2rem;
   font-size: 2.5rem;
+  padding: 20px;
+  outline: none;
+}
+
+h4 {
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  font-size: 1.7rem;
   padding: 20px;
 }
 
@@ -56,6 +64,11 @@ a:hover {
 
 .wrapper {
   position: relative;
+}
+
+.no-outline-on-focus button:focus,
+.no-outline-on-focus a:focus {
+  outline: none;
 }
 
 /* header */
@@ -87,8 +100,8 @@ a:hover {
   height: 18vh;
 }
 
-#book-online {
-  font-size: 1.5rem;
+#book-online p {
+  font-size: 1.7rem;
   font-weight: 400;
 }
 
@@ -158,37 +171,39 @@ a:hover {
 
 /* homepage*/
 
+.page-section {
+  height: 80vh;
+}
+
 .homepage {
   padding-top: 20vh;
   width: fit-content;
 }
 
 .logo-section {
-  background-image: url("../Images/LeafBackgroundFaded.jpeg");
+  background-image: url("../Images/altBackground.png");
   background-size: cover;
-  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #business-logo {
-  height: 30rem;
+  height: 25rem;
 }
 
-.about-me {
-  padding: 3rem;
+.about-salon {
   display: flex;
   height: 80vh;
   background: #d2dacf;
 }
 
-.about-me img {
-  width: 30%;
-  object-fit: scale-down;
+.about-salon img {
+  width: 50%;
+  object-fit: cover;
 }
 
-.about-me div {
+.about-salon div {
   padding: 50px;
 }
 
@@ -206,16 +221,17 @@ a:hover {
 /* prices */
 
 .prices-page {
-  padding-top: 130px;
-  height: 2180px;
+  padding-top: 190px;
+  padding-bottom: 20px;
+  height: 2000px;
   display: flex;
   flex-direction: column;
   background-image: url("../Images/LeafBackgroundFaded.jpeg");
 }
 
 .price-list {
-  margin: 40px;
-  height: 600px;
+  margin: 20px;
+  height: 700px;
   object-fit: scale-down;
 }
 
@@ -224,3 +240,65 @@ a:hover {
 
 @media (max-width: 480px) {
 } */
+
+/* faq */
+
+.faq {
+  padding-top: 20vh;
+  width: 70vw;
+}
+
+/* about me page */
+.about-me-page {
+  padding-top: 20vh;
+}
+
+.about-me {
+  display: flex;
+  background: #d2dacf;
+  height: 80vh;
+}
+
+.about-me img {
+  width: 30%;
+  object-fit: cover;
+}
+
+.about-me div {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* homepage most popular */
+
+.most-popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.most-popular h3 {
+  padding-bottom: 70px;
+}
+
+.nottitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.images {
+  display: flex;
+  flex-direction: column;
+}
+
+.images img {
+  height: 40vh;
+  width: 20vw;
+  object-fit: cover;
+}
+
+.images h4 {
+  padding-top: 30px;
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Nav from "./Nav";
 import Logo from "../Images/SBHairLogo.png";
 import Menu from "../Images/MenuIcon.png";
+import AccessibleFocusOutline from "./AccessibleFocusOutline.js";
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -16,9 +17,11 @@ function Header() {
 
   return (
     <header className="header">
-      <button onClick={showModal}>
-        <img id="menu-icon" src={Menu} alt="menu-icon" />
-      </button>
+      <AccessibleFocusOutline>
+        <button onClick={showModal}>
+          <img id="menu-icon" src={Menu} alt="menu-icon" />
+        </button>
+      </AccessibleFocusOutline>
       <Nav show={show} handleClose={hideModal} />
       <img id="header-logo" src={Logo} alt="logo" />
       <a

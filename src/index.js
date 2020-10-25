@@ -1,17 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./Pages/App";
+import Homepage from "./Pages/Homepage";
 import * as serviceWorker from "./serviceWorker";
 import { HashRouter, Route } from "react-router-dom";
+import AboutMe from "./Pages/AboutMe.js";
 import Prices from "./Pages/Prices.js";
+import Bridal from "./Pages/Bridal.js";
+import Extensions from "./Pages/Extensions.js";
+import FAQs from "./Pages/FAQs.js";
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter basename="/">
       <div>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/aboutme" component={AboutMe} />
         <Route exact path="/prices" component={Prices} />
-        <Route exact path="/" component={App} />
+        <Route exact path="/bridal" component={Bridal} />
+        <Route exact path="/extensions" component={Extensions} />
+        <Route exact path="/faqs" component={FAQs} />
       </div>
     </HashRouter>
   </React.StrictMode>,

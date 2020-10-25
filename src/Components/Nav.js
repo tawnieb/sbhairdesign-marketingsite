@@ -1,21 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AccessibleFocusOutline from "./AccessibleFocusOutline.js";
 
 function Nav({ handleClose, show }) {
   const showHideClassName = show ? "modal" : "modal display-none";
 
   return (
     <div className={showHideClassName}>
-      <button id="close-button" onClick={handleClose}>
-        X
-      </button>
+      <AccessibleFocusOutline>
+        <button id="close-button" onClick={handleClose}>
+          X
+        </button>
+      </AccessibleFocusOutline>
       <nav>
         <ul>
           <li>
             <Link to={`/`}>HOME</Link>
           </li>
           <li>
-            <a href="#about-me">ABOUT ME</a>
+            <Link to={`/aboutme`}>ABOUT ME</Link>
+          </li>
+          <li>
+            <Link to={`/prices`}>PRICES</Link>
+          </li>
+          <li>
+            <Link to={`/bridal`}>BRIDAL</Link>
+          </li>
+          <li>
+            <Link to={`/extensions`}>EXTENSIONS</Link>
           </li>
           <li>
             <a href="https://www.fresha.com/a/sbhairdesign-thrapston-14-scotney-way-hdank2qo/booking?menu=true">
@@ -23,10 +35,10 @@ function Nav({ handleClose, show }) {
             </a>
           </li>
           <li>
-            <a href="#footer">CONTACT</a>
+            <Link to={`/faqs`}>FAQ'S</Link>
           </li>
           <li>
-            <Link to={`/prices`}>PRICES</Link>
+            <a href="#footer">CONTACT</a>
           </li>
         </ul>
       </nav>

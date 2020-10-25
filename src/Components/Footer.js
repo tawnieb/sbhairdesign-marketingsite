@@ -11,7 +11,10 @@ function Footer() {
     <footer id="footer">
       <div className="footer-information">
         <h3>GET IN TOUCH</h3>
-        <p>E: sbhairdesign1@gmail.com</p>
+        <p>SB Hair Design</p>
+        <a href="mailto:sbhairdesign1@gmail.com">
+          <p>E: sbhairdesign1@gmail.com</p>
+        </a>
         <p>Tel: 07915942723</p>
         <div>
           <a href="https://www.facebook.com/sbhairdesignnn" target="_none">
