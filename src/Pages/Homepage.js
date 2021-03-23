@@ -1,78 +1,131 @@
 import React from "react";
+import styled from "styled-components";
 import Layout from "../Components/Layout";
 import Salon from "../Images/SalonPlaceholder.jpg";
-import Logo from "../Images/SBHairLogo.png";
+import Logo from "../Images/LOGO.png";
 import "../CSS/App.css";
 import Carousel from "../Components/Carousel/Carousel.js";
+import Background from "../Images/LeafBackground.png";
+
+const Wrapper = styled.div`
+  padding-top: 20vh;
+`;
+
+const PageSection = styled.div`
+  height: 80vh;
+`;
+
+const LogoSection = styled(PageSection)`
+  background-image: url(${Background});
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const MostPopular = styled(PageSection)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .h3 {
+    padding-bottom: 70px;
+  }
+`;
+
+const Images = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+`;
+
+const BusinessLogo = styled.img`
+  height: 25rem;
+`;
+
+const AboutSalon = styled(PageSection)`
+  display: flex;
+  background: black;
+
+  .img {
+    width: 50%;
+  }
+
+  .div {
+    width: 50%;
+    padding: 50px;
+  }
+`;
+
+const ImageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  .h4 {
+    padding-top: 30px;
+  }
+`;
+
+const StyledImage = styled.img`
+  height: 400px;
+  width: 200px;
+  object-fit: cover;
+`;
 
 const Homepage = () => {
   return (
     <Layout>
-      <div className="homepage">
-        <div className="page-section logo-section">
-          <img id="business-logo" src={Logo} alt="logo" />
-        </div>
-        <div className="about-salon">
+      <Wrapper>
+        <LogoSection>
+          <BusinessLogo src={Logo} alt="sb-hair-design-logo" />
+        </LogoSection>
+        <AboutSalon>
           <img src={Salon} alt="salon" />
           <div>
             <h3>ABOUT THE SALON</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Bavaro's Hair Design is a warm and welcoming Hair Salon, found in
+              the heart of Aldwincle Village. (Near Thrapston)
             </p>
             <p>
-              Magnum pi dick van dyke comb alpha trion cesar romero prince barin
-              terry thomas, robot moustache east european cesar romero French
-              café patron comb prince barin alpha trion super mario big daft
-              brush dick van dyke terry thomas magnum pi jimi hendrix?
+              The Salon Owner, Sarah Bavaro is hugely passionate about
+              hairdressing. She has worked previously in several high street
+              salons, travelled the world working as a hair Stylist on Cruise
+              Ships and more recently, had her own home hair studio.
             </p>
             <p>
-              Trimmed colonel mustard worn with distinction mexican’t Sergeant
-              major clive dunn, decathlon champion worn with distinction trimmed
-              Sergeant major cigars Nostrilis tickler ding-dong cream bun
-              disaster mexican’t clive dunn colonel mustard, Sergeant major
-              Nostrilis tickler colonel mustard cigars iron tache clive dunn
-              ding-dong cream bun disaster dali worn with distinction decathlon
-              champion mexican’t trimmed stache? Brad pitt fu manchu id vincent
-              price robot moustache, fu manchu id brad pitt robot moustache
-              chevron soup strainer professor plum vincent price?
+              At Bavaro's we offer a bespoke service to deliver a look which
+              suits both you and your lifestyle. Together you and your expert
+              will plan the journey to achieving your dream hair. Our goal is to
+              make you feel like the best version of yourself.
             </p>
             <p>
-              Nefarious man of the year 1986 dodgy uncle clive off-piste
-              charming villain mexican’t face mop blacksmith? Pencil ian botham
-              hulk hogan helllloooo spaghetti western leader of men spaghetti
-              western, ian botham hulk hogan blue oyster bar spaghetti western
-              leader of men pencil sterling godlike spaghetti western charlie
-              chaplin ron jeremy mustachioed helllloooo what a bounder, sterling
-              villain hulk hogan godlike charlie chaplin mustachioed spaghetti
-              western educated spaghetti western leader of men ron jeremy
-              helllloooo what a bounder bogie basket blue oyster bar ian botham
-              pencil?
+              Thank you for reading to find out more about us! Please don't
+              hesitate to get in touch if there is anything more you would like
+              to know. We look forward to welcoming you soon.
             </p>
           </div>
-        </div>
-        <div className="page-section most-popular">
+        </AboutSalon>
+        <MostPopular>
           <h3>MOST POPULAR</h3>
-          <div className="nottitle">
-            <div className="images">
-              <img src={Salon} alt=""></img>
+          <Images>
+            <ImageWrapper>
+              <StyledImage src={Salon} alt="" />
               <h4>MOST POPULAR</h4>
-            </div>
-            <div className="images">
-              <img src={Salon} alt=""></img>
+            </ImageWrapper>
+            <ImageWrapper>
+              <StyledImage src={Salon} alt="" />
               <h4>MOST POPULAR</h4>
-            </div>
-            <div className="images">
-              <img src={Salon} alt=""></img>
-              <h4>MOST POPULAR</h4>
-            </div>
-          </div>
-        </div>
-        <div className="page-section reviews">
+            </ImageWrapper>
+            <ImageWrapper>
+              <StyledImage src={Salon} alt="" /> <h4>MOST POPULAR</h4>
+            </ImageWrapper>
+          </Images>
+        </MostPopular>
+        <PageSection>
           <h3>REVIEWS</h3>
           <Carousel />
-        </div>
-      </div>
+        </PageSection>
+      </Wrapper>
     </Layout>
   );
 };

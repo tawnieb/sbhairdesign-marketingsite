@@ -1,6 +1,6 @@
 import React from "react";
 
-function Review({ reviews }) {
+function Review({ reviews, fade }) {
   return reviews.map((review, index) => (
     <div className="review-component" id={`slide${index}`} key={index}>
       <p>{review.name}</p>

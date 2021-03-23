@@ -9,10 +9,12 @@ import Prices from "./Pages/Prices.js";
 import Bridal from "./Pages/Bridal.js";
 import Extensions from "./Pages/Extensions.js";
 import FAQs from "./Pages/FAQs.js";
+import GlobalStyle from "./GlobalStyles";
 
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter basename="/">
+      <GlobalStyle />
       <div>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/aboutme" component={AboutMe} />

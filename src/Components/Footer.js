@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -6,10 +7,28 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import key from "../key.js";
 
-function Footer() {
+const FooterWrapper = styled.footer`
+  height: 80vh;
+`;
+
+const Info = styled.div`
+  padding: 30px;
+`;
+
+const MapWrapper = styled.div`
+  filter: grayscale(100%);
+  border-top: 5px solid black;
+`;
+
+const StyledIcon = styled(FontAwesomeIcon)`
+  font-size: 6rem;
+  padding: 5px;
+`;
+
+const Footer = () => {
   return (
-    <footer id="footer">
-      <div className="footer-information">
+    <FooterWrapper>
+      <Info>
         <h3>GET IN TOUCH</h3>
         <p>SB Hair Design</p>
         <a href="mailto:sbhairdesign1@gmail.com">
@@ -17,19 +36,20 @@ function Footer() {
         </a>
         <p>Tel: 07915942723</p>
         <div>
-          <a href="https://www.facebook.com/sbhairdesignnn" target="_none">
-            <FontAwesomeIcon className="icon" icon={faFacebook} />
+          <a href="https://www.facebook.com/bavaroshairdesign" target="_none">
+            <StyledIcon icon={faFacebook} />
           </a>
-          <a href="https://www.instagram.com/sbhairdesignn" target="_none">
-            <FontAwesomeIcon className="icon" icon={faInstagramSquare} />
+          <a href="https://www.instagram.com/bavaroshairdesign" target="_none">
+            <StyledIcon icon={faInstagramSquare} />
           </a>
         </div>
-      </div>
-      <div className="map">
+      </Info>
+      <MapWrapper>
         <h3>FIND ME</h3>
         <div>
           <iframe
             id="google-map"
+            width="100%"
             title="change-maps"
             frameBorder="0"
             scrolling="no"
@@ -39,9 +59,9 @@ function Footer() {
             aria-label="Via oriani 22 Cervia"
           ></iframe>
         </div>
-      </div>
-    </footer>
+      </MapWrapper>
+    </FooterWrapper>
   );
-}
+};
 
 export default Footer;

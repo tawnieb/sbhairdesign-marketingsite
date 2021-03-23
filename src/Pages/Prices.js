@@ -1,27 +1,36 @@
 import React from "react";
-import Header from "../Components/Header.js";
-import Footer from "../Components/Footer.js";
+import styled from "styled-components";
 import Bridal from "../Images/bridal_pricelist.png";
 import Pricelist from "../Images/hair_pricelist.png";
 import Extensions from "../Images/extensions_pricelist.png";
 import Wedding from "../Images/wedding_pricelist.png";
+import Layout from "../Components/Layout";
+
+const Wrapper = styled.div`
+  padding-top: 190px;
+  padding-bottom: 20px;
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../Images/LeafBackgroundFaded.jpeg");
+`;
+
+const PriceList = styled.img`
+  margin: 20px;
+  height: 700px;
+  object-fit: scale-down;
+`;
 
 const Prices = () => {
   return (
-    <div className="wrapper">
-      <Header></Header>
-      <div className="prices-page">
-        <img className="price-list" src={Pricelist} alt="price list" />
-        <img
-          className="price-list"
-          src={Extensions}
-          alt="extensions price list"
-        />
-        <img className="price-list" src={Wedding} alt="bridal price list" />
-        <img className="price-list" src={Bridal} alt="bridal price list" />
-      </div>
-      <Footer></Footer>
-    </div>
+    <Layout>
+      <Wrapper>
+        <PriceList src={Pricelist} alt="price list" />
+        <PriceList src={Extensions} alt="extensions price list" />
+        <PriceList src={Wedding} alt="bridal price list" />
+        <PriceList src={Bridal} alt="bridal price list" />
+      </Wrapper>
+    </Layout>
   );
 };
 

@@ -1,12 +1,34 @@
 import React from "react";
+import styled from "styled-components";
 import Sarah from "../Images/Sarah.jpg";
 import Layout from "../Components/Layout";
 
-function AboutMe() {
+const Wrapper = styled.div`
+  padding-top: 20vh;
+`;
+
+const AboutMeWrapper = styled.div`
+  display: flex;
+  background: #d2dacf;
+  height: 80vh;
+
+  .img {
+    width: 30%;
+    object-fit: cover;
+  }
+
+  .div {
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+
+const AboutMe = () => {
   return (
     <Layout>
-      <div className="about-me-page"></div>
-      <div className="about-me">
+      <Wrapper></Wrapper>
+      <AboutMeWrapper>
         <img src={Sarah} alt="Sarah" />
         <div>
           <h3>ABOUT ME</h3>
@@ -40,9 +62,9 @@ function AboutMe() {
           </p>
           <p>BYE FOR NOW!</p>
         </div>
-      </div>
+      </AboutMeWrapper>
     </Layout>
   );
-}
+};
 
 export default AboutMe;

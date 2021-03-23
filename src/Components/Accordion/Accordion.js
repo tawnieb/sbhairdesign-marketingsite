@@ -1,6 +1,31 @@
 import React, { useState, useRef } from "react";
+import styled from "styled-components";
 import "./Accordion.css";
 import Chevron from "./Chevron";
+
+const AccordionSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e5e5e5;
+  width: 60vw;
+  justify-content: space-between;
+`;
+
+const Title = styled.p`
+  font-size: 1.8rem;
+`;
+
+const Text = styled.div`
+  font-size: 1.4rem;
+  text-align: start;
+  padding-left: 28px;
+  padding-bottom: 20px;
+`;
+
+const Content = styled.div`
+  overflow: auto;
+  transition: max-height 0.6s ease;
+`;
 
 const Accordion = ({ title, content }) => {
   const [active, setActive] = useState("");
@@ -18,22 +43,15 @@ const Accordion = ({ title, content }) => {
   }
 
   return (
-    <div className="accordion-section">
+    <AccordionSection>
       <button className={`accordion ${active}`} onClick={toggleAccordion}>
-        <p className="accordion-title">{title}</p>
+        <Title>{title}</Title>
         <Chevron width={10} fill={"#777"} className={`${rotate}`} />
       </button>
-      <div
-        ref={contentRef}
-        style={{ maxHeight: `${height}` }}
-        className="accordion-content"
-      >
-        <div
-          className="accordion-text"
-          dangerouslySetInnerHTML={{ __html: content }}
-        ></div>
-      </div>
-    </div>
+      <Content ref={contentRef} style={{ maxHeight: `${height}` }}>
+        <Text dangerouslySetInnerHTML={{ __html: content }} />
+      </Content>
+    </AccordionSection>
   );
 };
 
