@@ -97,7 +97,7 @@ const Footer = () => {
           scrolling="no"
           marginHeight="0"
           marginWidth="0"
-          src={`https://www.google.com/maps/embed/v1/place?key=${key}=place_id:ChIJn6g_HiWXd0gR775iZ2wH_iE`}
+          // src={`https://www.google.com/maps/embed/v1/place?key=${key}=place_id:ChIJn6g_HiWXd0gR775iZ2wH_iE`}
           aria-label="Via oriani 22 Cervia"
         ></iframe>
       </MapWrapper>
