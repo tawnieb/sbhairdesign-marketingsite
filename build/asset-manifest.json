@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/sbhairdesign-marketingsite/static/css/main.4b66ff21.chunk.css",
+    "main.js": "/sbhairdesign-marketingsite/static/js/main.cc5afde1.chunk.js",
+    "main.js.map": "/sbhairdesign-marketingsite/static/js/main.cc5afde1.chunk.js.map",
+    "runtime-main.js": "/sbhairdesign-marketingsite/static/js/runtime-main.f0fb5d9b.js",
+    "runtime-main.js.map": "/sbhairdesign-marketingsite/static/js/runtime-main.f0fb5d9b.js.map",
+    "static/js/2.e976e00f.chunk.js": "/sbhairdesign-marketingsite/static/js/2.e976e00f.chunk.js",
+    "static/js/2.e976e00f.chunk.js.map": "/sbhairdesign-marketingsite/static/js/2.e976e00f.chunk.js.map",
+    "index.html": "/sbhairdesign-marketingsite/index.html",
+    "precache-manifest.b1196425b78fadb5285721d237a5de95.js": "/sbhairdesign-marketingsite/precache-manifest.b1196425b78fadb5285721d237a5de95.js",
+    "service-worker.js": "/sbhairdesign-marketingsite/service-worker.js",
+    "static/css/main.4b66ff21.chunk.css.map": "/sbhairdesign-marketingsite/static/css/main.4b66ff21.chunk.css.map",
+    "static/js/2.e976e00f.chunk.js.LICENSE.txt": "/sbhairdesign-marketingsite/static/js/2.e976e00f.chunk.js.LICENSE.txt",
+    "static/media/LOGO.png": "/sbhairdesign-marketingsite/static/media/LOGO.28116572.png",
+    "static/media/LeafBackground.png": "/sbhairdesign-marketingsite/static/media/LeafBackground.158a377f.png",
+    "static/media/SalonPlaceholder.jpg": "/sbhairdesign-marketingsite/static/media/SalonPlaceholder.54892660.jpg",
+    "static/media/Sarah.jpg": "/sbhairdesign-marketingsite/static/media/Sarah.d001d515.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0fb5d9b.js",
+    "static/js/2.e976e00f.chunk.js",
+    "static/css/main.4b66ff21.chunk.css",
+    "static/js/main.cc5afde1.chunk.js"
+  ]
+}
