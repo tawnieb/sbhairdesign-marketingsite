@@ -5,7 +5,7 @@ import {
   faFacebook,
   faInstagramSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import key from "../key.js";
+import key from "../key";
 import { devices } from "../breakpoints";
 
 const FooterWrapper = styled.footer`
