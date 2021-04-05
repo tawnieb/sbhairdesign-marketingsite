@@ -65,6 +65,11 @@ const GlobalStyle = createGlobalStyle`
   a:hover {
     color: gray;
   }
+
+  td {
+    font-size: 16px;
+    padding: 0 10px 5px 0;
+  }
   
   .wrapper {
     position: relative;

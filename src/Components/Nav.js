@@ -29,9 +29,9 @@ const Navbar = styled.div`
   box-shadow: 5px 10px 15px #c3c3c3;
 `;
 
-const Nav = ({ handleClose, showNav }) => {
+const Nav = ({ handleClose, showNav, ref }) => {
   return (
-    <Navbar showNav={showNav}>
+    <Navbar showNav={showNav} ref={ref}>
       <AccessibleFocusOutline>
         <CloseButton onClick={handleClose}>X</CloseButton>
       </AccessibleFocusOutline>
@@ -47,7 +47,11 @@ const Nav = ({ handleClose, showNav }) => {
             <Link to={`/prices`}>PRICES</Link>
           </li>
           <li>
-            <a href="https://www.fresha.com/a/sbhairdesign-thrapston-14-scotney-way-hdank2qo/booking?menu=true">
+            <a
+              href="https://www.fresha.com/a/bavaros-hair-design-aldwincle-31-main-street-c2rz0crr/booking?menu=true"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               BOOK ONLINE
             </a>
           </li>
@@ -61,7 +65,7 @@ const Nav = ({ handleClose, showNav }) => {
             <Link to={`/faqs`}>FAQ'S</Link>
           </li>
           <li>
-            <a href="#footer">CONTACT</a>
+            <a href="#footer">GET IN TOUCH</a>
           </li>
         </ul>
       </nav>

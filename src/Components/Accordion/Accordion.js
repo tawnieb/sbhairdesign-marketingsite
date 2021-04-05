@@ -2,13 +2,18 @@ import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import "./Accordion.css";
 import Chevron from "./Chevron";
+import { devices } from "../../breakpoints";
 
 const AccordionSection = styled.div`
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #e5e5e5;
-  width: 60vw;
+  width: 90vw;
   justify-content: space-between;
+
+  @media ${devices.tablet} {
+    width: 70vw;
+  }
 `;
 
 const Title = styled.p`

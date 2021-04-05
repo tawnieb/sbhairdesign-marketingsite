@@ -44,7 +44,7 @@ const BusinessLogo = styled.img`
 
 const AboutSalon = styled(PageSection)`
   display: flex;
-  background: black;
+  padding: 24px;
 
   .img {
     width: 50%;
@@ -83,25 +83,15 @@ const Homepage = () => {
           <div>
             <h3>ABOUT THE SALON</h3>
             <p>
-              Bavaro's Hair Design is a warm and welcoming Hair Salon, found in
-              the heart of Aldwincle Village. (Near Thrapston)
-            </p>
-            <p>
-              The Salon Owner, Sarah Bavaro is hugely passionate about
-              hairdressing. She has worked previously in several high street
-              salons, travelled the world working as a hair Stylist on Cruise
-              Ships and more recently, had her own home hair studio.
-            </p>
-            <p>
-              At Bavaro's we offer a bespoke service to deliver a look which
-              suits both you and your lifestyle. Together you and your expert
-              will plan the journey to achieving your dream hair. Our goal is to
-              make you feel like the best version of yourself.
-            </p>
-            <p>
-              Thank you for reading to find out more about us! Please don't
-              hesitate to get in touch if there is anything more you would like
-              to know. We look forward to welcoming you soon.
+              Bavaro's Hair Design is in a converted barn on Pear Tree Farm
+              situated in the lovely village of Aldwincle. The salon and
+              surrounding farm have extraordinary character and a welcoming
+              charm. The salon itself was once the farms milking barn, active
+              until recently. The large arched doors and windows allow huge
+              amounts of natural light in, making the space feel bright and
+              airy. At Bavaro's we offer a bespoke service. Together you and
+              your expert will plan the journey to achieving your dream hair,
+              which suits both you and your lifestyle.
             </p>
           </div>
         </AboutSalon>

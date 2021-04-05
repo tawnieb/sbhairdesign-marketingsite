@@ -2,15 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Sarah from "../Images/Sarah.jpg";
 import Layout from "../Components/Layout";
+import { devices } from "..//breakpoints";
 
-const Wrapper = styled.div`
-  padding-top: 20vh;
-`;
+const Wrapper = styled.div``;
 
 const AboutMeWrapper = styled.div`
   display: flex;
-  background: #d2dacf;
-  height: 80vh;
+  flex-direction: column;
+  padding-top: 15vh;
 
   .img {
     width: 30%;
@@ -22,6 +21,18 @@ const AboutMeWrapper = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+  @media ${devices.tablet} {
+    padding-top: 20vh;
+    flex-direction: row;
+    height: 100vh;
+  }
+`;
+
+const StyledImg = styled.img`
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 10px 15px #c3c3c3;
 `;
 
 const AboutMe = () => {
@@ -29,38 +40,35 @@ const AboutMe = () => {
     <Layout>
       <Wrapper></Wrapper>
       <AboutMeWrapper>
-        <img src={Sarah} alt="Sarah" />
+        <StyledImg src={Sarah} alt="Sarah" />
         <div>
           <h3>ABOUT ME</h3>
           <p>
-            SB HAIR DESIGN IS A HAIR DRESSING SALON STARTED BY SARAH BAVARO
-            (THAT'S ME. HELLO!).
+            The salon owner, Sarah Bavaro is passionate about hairdressing and
+            always takes care to create the best possible hairstyle for you.
           </p>
           <p>
-            IN 2010 I STUDIED AND BECAME LEVEL 3 QUALIFIED IN ALL ASPECTS OF
-            HAIRDRESSING INCLUDING A QUALIFICATION IN MICRO RING HAIR
-            EXTENSIONS. FROM THE MOMENT I BEGAN I KNEW IT WAS FOR ME AND I FELL
-            IN LOVE WITH ALL THINGS HAIR!!
+            Sarah has many years experience and several advanced level
+            qualifications. She continues to stay up to date with latest trends
+            and likes to experiment with
           </p>
           <p>
-            IN 2016 MY PASSION FOR HAIRDRESSING TOOK ME AROUND THE WORLD,
-            WORKING ON CRUISE SHIPS, & AFTER THAT, ALL THE WAY DOWN UNDER TO
-            AUSTRALIA. IN 2019, AFTER YEARS OF WORKING IN SALONS, MY DAUGHTER
-            WAS BORN AND THE TIME WAS RIGHT TO OPEN A SALON OF MY OWN.
+            She has previously worked in several high street salons and
+            travelled the world working on Cruise Ships where she specialised in
+            wedding hair. More recently, she had her own home salon.
           </p>
           <p>
-            AS YOUR HAIRDRESSER I AM DEVOTED TO YOUR HAIR AND LOVE TO ACHIEVE
-            YOUR HAIR GOALS! AT THE SALON I ONLY BOOK ONE GUEST IN AT A TIME SO
-            THE SPACE IS ENTIRELY YOURS TO RELEX AND ENJOY YOUR APPOINTMENT -
-            MAKING IT A GREAT PLACE TO BRING YOUR BABY OR BEST FRIEND FOR GIRLY
-            TIME.
+            Thank you for reading to find out more about us! Please don't
+            hesitate to get in touch if there is anything more you would like to
+            know.
           </p>
-          <p>THANK YOU FOR READING TO FIND OUT MORE ABOUT ME!</p>
-          <p>
-            PLEASE DON'T HESITATE TO GET IN TOUCH IF THERE IS ANYTHING MORE YOU
-            WOULD LIKE TO KNOW.
-          </p>
-          <p>BYE FOR NOW!</p>
+          <p>We look forward to welcoming you soon.</p>
+          <p></p>
+          <q>
+            “I feel so fortunate that I get to do what I love everyday, with
+            wonderful clients I'm lucky enough to call my friends”
+          </q>
+          <cite>Sarah Bavaro</cite>
         </div>
       </AboutMeWrapper>
     </Layout>
